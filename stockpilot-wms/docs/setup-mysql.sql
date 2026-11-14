@@ -12,7 +12,7 @@ CREATE DATABASE IF NOT EXISTS wms_sandbox
   CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
 
 -- The app logs in as this user, never as root.
-CREATE USER IF NOT EXISTS 'wms_app'@'localhost' IDENTIFIED BY 'ChangeMe-123';
+CREATE USER IF NOT EXISTS 'wms_app'@'localhost' IDENTIFIED BY 'Password123!';
 
 GRANT ALL PRIVILEGES ON wms.*         TO 'wms_app'@'localhost';
 GRANT ALL PRIVILEGES ON wms_sandbox.* TO 'wms_app'@'localhost';
